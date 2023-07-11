@@ -2,8 +2,8 @@
   <router-link to="/">Enter rules for testing</router-link>
   <router-link to="/string">Enter string</router-link>
   <h1>Testing results</h1>
-  <div class="container">
-    <table>
+  <div class="">
+    <table class="container">
       <thead>
         <th>Test name</th>
         <th>Test result</th>

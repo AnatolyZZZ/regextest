@@ -64,4 +64,8 @@ export default {
 input {
   height: 1.5rem;
 }
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
 </style>
