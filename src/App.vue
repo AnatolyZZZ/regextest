@@ -1,18 +1,25 @@
 <template>
-  <CreateReg />
-  <TestList/>
+  <router-view></router-view>
 </template>
 
 <script>
-import CreateReg from './components/CreateReg.vue'
-import TestList from './components/TestList.vue';
+ import { mapActions } from 'vuex';
+// import TestList from './components/TestList.vue';
+// import router from './router';
 
 export default {
   name: 'App',
   components: {
-    CreateReg,
-    TestList
-  }
+    // CreateReg,
+    // TestList
+  },
+  methods: {...mapActions(['setAllTests'])},
+  mounted () {
+    const testsjson = localStorage.getItem('tests');
+    const tests = JSON.parse(testsjson);
+    this.setAllTests(new Map(tests))
+    // console.log(tests)
+  } 
 }
 </script>
 
@@ -44,12 +51,16 @@ export default {
 }
 .btn {
   width: 7rem;
-  background: black;
   color: white;
   border: 0;
   border-radius: 3px
-
 }
+.btn-del {
+    background: red;
+ }
+ .btn-black {
+    background-color: black;
+ }
 input {
   height: 1.5rem;
 }
