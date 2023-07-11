@@ -1,15 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <CreateReg />
+  <TestList/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CreateReg from './components/CreateReg.vue'
+import TestList from './components/TestList.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    CreateReg,
+    TestList
   }
 }
 </script>
@@ -22,5 +24,33 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.name {
+  width: 30%;
+}
+.rule {
+  width: 70%;
+}
+.container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1100px;
+}
+.flex {
+  display: flex;
+}
+.gap1 {
+  gap: 1rem;
+}
+.btn {
+  width: 7rem;
+  background: black;
+  color: white;
+  border: 0;
+  border-radius: 3px
+
+}
+input {
+  height: 1.5rem;
 }
 </style>
