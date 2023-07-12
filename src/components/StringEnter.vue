@@ -35,6 +35,7 @@ export default {
             }
         },
         TestOne (test) {
+            // thirst check if user entered regex with / in the begining end in the end
              if (test.length > 1) {
                 if (test[0] ==='/' && test[test.length - 1]) {
                     test = test.slice(1, test.length - 1);

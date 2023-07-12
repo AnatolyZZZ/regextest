@@ -30,6 +30,7 @@ export default {
     }
   },
   created() {
+    // updates result reactive value when loaded
     this.result = this.getResult();
   },
   name : "ResultPage",

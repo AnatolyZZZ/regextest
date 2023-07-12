@@ -31,6 +31,7 @@ export default {
         this.setTest();
       }
     },
+    // gets current values of inputs
     computed: mapGetters(['getCurrent'])
 }
 </script>

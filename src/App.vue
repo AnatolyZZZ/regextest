@@ -4,21 +4,16 @@
 
 <script>
  import { mapActions } from 'vuex';
-// import TestList from './components/TestList.vue';
-// import router from './router';
 
 export default {
   name: 'App',
   components: {
-    // CreateReg,
-    // TestList
   },
   methods: {...mapActions(['setAllTests'])},
   mounted () {
     const testsjson = localStorage.getItem('tests');
     const tests = JSON.parse(testsjson);
     this.setAllTests(new Map(tests))
-    // console.log(tests)
   } 
 }
 </script>
