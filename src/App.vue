@@ -38,6 +38,13 @@ export default {
 .rule {
   width: 70%;
 }
+header {
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+}
+header a {
+  color: rgb(50, 50, 50)
+}
 .container {
   margin: 0 auto;
   width: 80%;

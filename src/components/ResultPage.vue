@@ -1,6 +1,8 @@
 <template>
-  <router-link to="/">Enter rules for testing</router-link>
-  <router-link to="/string">Enter string</router-link>
+  <header class="container flex gap1">
+    <router-link to="/">Enter rules for testing</router-link>
+    <router-link to="/string">Enter string and make test</router-link>
+  </header>
   <h1>Testing results</h1>
   <div class="">
     <table class="container">
@@ -29,8 +31,6 @@ export default {
   },
   created() {
     this.result = this.getResult();
-    console.log(this.getResult())
-    console.log(this.result)
   },
   name : "ResultPage",
   methods : {...mapGetters(['getResult'])},

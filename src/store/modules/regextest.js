@@ -1,5 +1,5 @@
 const state = {
-    tests : new Map([['1', '^\\d+$'], ['2', 'two'], ['3' , 'tree']]),
+    tests : new Map(),
     edditing : null,
     current : {
         name : "",

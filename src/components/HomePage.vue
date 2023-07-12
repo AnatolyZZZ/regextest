@@ -1,5 +1,8 @@
 <template>
-    <router-link to="/string">Enter testing string</router-link>
+    <header class="container flex">
+        <router-link to="/string">Enter testing string and make test</router-link>
+    </header>
+    <h2>Enter rules for testing</h2>
     <CreateReg />
     <TestList/>
 </template>
